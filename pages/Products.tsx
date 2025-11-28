@@ -2,11 +2,14 @@ import React from 'react';
 import { Camera, Cpu, TrafficCone, MonitorCheck, Wrench } from 'lucide-react';
 import { ProductParam } from '../types';
 
+import imgMonitoramento from '../assets/images/monitoramento-deltaway2.png';
+import imgSala from '../assets/images/sala-de-monitoramento.png';
+
 const products: ProductParam[] = [
     {
         category: "Monitoramento e Fiscalização",
         icon: Camera,
-        image: "./assets/images/monitoramento-deltaway2.png",
+        image: {imgMonitoramento},
         items: [
             "Radares de velocidade (Fixo e Portátil)",
             "Lombadas eletrônicas com display LED",
@@ -17,7 +20,7 @@ const products: ProductParam[] = [
     {
         category: "Controlador Semafórico",
         icon: Cpu,
-        image: "./assets/images/sala-de-monitoramento.png",
+        image: {imgSala},
         items: [
             "Controladores de tráfego inteligentes em tempo real",
             "Centrais de sincronização (Onda Verde)",
