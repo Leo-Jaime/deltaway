@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, Zap, Shield, Eye, Settings } from 'lucide-react';
 import { PageView } from '../types';
+import bgCidade from "../assets/images/cidade.png";
+import imgCruzamento from "../assets/images/cruzamento.png";
 
 interface HomeProps {
     onChangeView: (view: PageView) => void;
@@ -11,7 +13,7 @@ export const Home: React.FC<HomeProps> = ({ onChangeView }) => {
     <div className="flex flex-col w-full">
       {/* Hero Section */}
       <section className="relative bg-slate-900 text-white min-h-[650px] flex items-center overflow-hidden"  style={{ 
-                backgroundImage: "url(../assets/images/cidade.png)",
+                backgroundImage:  `url(${bgCidade})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center"
   }}>
@@ -65,7 +67,7 @@ export const Home: React.FC<HomeProps> = ({ onChangeView }) => {
                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-amber-500 rounded-2xl rotate-6 opacity-20 blur-lg"></div>
                  <div className="relative h-full w-full rounded-2xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-800">
                     <img 
-                        src="../assets/images/cruzamento.png" 
+                        src={imgCruzamento} 
                         alt="Smart City Traffic Control" 
                         className="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-700 hover:scale-105"
                     />
