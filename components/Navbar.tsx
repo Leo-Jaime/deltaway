@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Activity } from 'lucide-react';
 import { NavItem, PageView } from '../types';
-
+import logo from "../assets/images/logo-delta.png"
 interface NavbarProps {
   currentView: PageView;
   onChangeView: (view: PageView) => void;
@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onChangeView }) => 
             onClick={() => handleNavClick('HOME')}
           >
             <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white">
-                <img src="../assets/images/logo-delta.png"/>
+                <img src={logo}/>
             </div>
             <span className="font-bold text-2xl text-white tracking-tight">
               DELTA<span className="text-blue-500">WAY</span>
