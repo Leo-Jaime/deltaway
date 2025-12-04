@@ -4,39 +4,56 @@ import { ProductParam } from '../types';
 
 import imgMonitoramento from '../assets/images/monitoramento-deltaway2.png';
 import imgSala from '../assets/images/sala-de-monitoramento.png';
-
+import imgSinalizacaoSemaforica from '../assets/images/semafaro-sinalização.png'
+import imgManutencao from '../assets/images/manutence.png'
+import imgControladoraSemaforica from '../assets/images/controladora-semaforica.png'
 const products: ProductParam[] = [
     {
         category: "Monitoramento e Fiscalização",
         icon: Camera,
         image: imgMonitoramento,
         items: [
-            "Radares de velocidade (Fixo e Portátil)",
+            "Radares de velocidade Fixo",
             "Lombadas eletrônicas com display LED",
-            "Câmeras de monitoramento de tráfego (CFTV)",
-            "Sistemas OCR/LPR (Leitura automática de placas)"
+            "Câmeras de monitoramento de tráfego",
+            "Sistemas OCR/LPR Leitura automática de placas"
         ]
     },
     {
         category: "Controlador Semafórico",
         icon: Cpu,
-        image: imgSala,
+        image: imgControladoraSemaforica,
         items: [
-            "Controladores de tráfego inteligentes em tempo real",
-            "Centrais de sincronização (Onda Verde)",
-            "Hardware robusto IP65 para ambientes hostis",
-            "Sistemas de no-break para cruzamentos críticos"
+                "Melhor custo-benefício para controladoras semafóricas, desenvolvido e fabricado pela Deltaway",
+                "Equilíbrio entre recursos sofisticados, simplicidade e confiabilidade para o trânsito",
+                "Estrutura modular para instalação e manutenção rápidas e práticas",
+                "Proteção IP66 resistente ao tempo, chuva, sol e umidade",
+                "Primeira controladora com memória removível para troca de módulo sem reprogramação",
+                "Acionamento de 1 a 8 fases veiculares com opção para fase de pedestre",
+                "Software e circuito de proteção contra verde conflitante",
+                "Conexão de cabos simples e segura, com remoção total da eletrônica sem retirar a caixa",
+                "Alimentação automática 80~250V AC com proteção e filtro contra descargas e falhas",
+                "Compatível com Central de Controle e Operações (CCO)",
+                "Autodiagnóstico de erro e identificação de lâmpada queimada",
+                "Sincronismo entre controladoras de forma simples (Onda Verde)",
+                "Planos configuráveis por horário, dia da semana e acionamento do pedestre",
+                "Programação prática via Tablet touch, com aplicativo intuitivo",
+                "Armazena mais de 100 planos semafóricos com cálculo automático de tempos",
+                "Visualização gráfica da programação e status de funcionamento",
+                "Garantia estendida de 18 meses contra defeitos de fabricação"
         ]
     },
     {
         category: "Sinalização Semafórica",
         icon: TrafficCone,
-        image: "",
+        image: imgSinalizacaoSemaforica,
         items: [
-            "Grupos focais de alto brilho (LED)",
-            "Estruturas metálicas: Pórticos e Semipórticos",
-            "Braços projetados para semáforos",
-            "Botoeiras sonoras para acessibilidade de pedestres"
+                "Construído em alumínio naval com pintura eletrostática e lentes de policarbonato",
+                "Iluminação a LED de alto brilho com ligação individual e sensor de brilho para economia de energia e conforto visual",
+                "Manutenção pela parte frontal, facilitando o acesso",
+                "Instalação elétrica simples, sem necessidade de cabo auxiliar para alimentação",
+                "Instalação com suporte único e 3 eixos de ajuste",
+                "Garantia de 2 anos"
         ]
     },
     {
@@ -44,7 +61,7 @@ const products: ProductParam[] = [
         icon: MonitorCheck,
         image: "",
         items: [
-            "Software de gestão completa de multas (JARI)",
+            "Software de gestão completa de multas",
             "Módulo de validação de imagens com IA",
             "Integração direta com DETRAN e órgãos de trânsito",
             "Dashboard de estatísticas e backoffice web"
@@ -53,7 +70,7 @@ const products: ProductParam[] = [
     {
         category: "Instalação e Manutenção",
         icon: Wrench,
-        image: "",
+        image: imgManutencao,
         items: [
             "Equipes especializadas para implantação viária",
             "Manutenção preventiva de equipamentos eletrônicos",
