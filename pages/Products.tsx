@@ -9,7 +9,7 @@ const products: ProductParam[] = [
     {
         category: "Monitoramento e Fiscalização",
         icon: Camera,
-        image: {imgMonitoramento},
+        image: imgMonitoramento,
         items: [
             "Radares de velocidade (Fixo e Portátil)",
             "Lombadas eletrônicas com display LED",
@@ -20,7 +20,7 @@ const products: ProductParam[] = [
     {
         category: "Controlador Semafórico",
         icon: Cpu,
-        image: {imgSala},
+        image: imgSala,
         items: [
             "Controladores de tráfego inteligentes em tempo real",
             "Centrais de sincronização (Onda Verde)",
