@@ -67,8 +67,19 @@ export const Footer: React.FC<FooterProps> = ({ onChangeView }) => {
 
         </div>
         
-        <div className="border-t border-slate-800 mt-12 pt-8 text-center text-sm text-gray-500">
+<div className="border-t border-slate-800 mt-12 pt-8 text-center text-sm text-gray-500">
           <p>&copy; {new Date().getFullYear()} Deltaway. Todos os direitos reservados. Orgulhosamente Brasileiro.</p>
+
+          <p className="mt-2 text-gray-400">
+            Desenvolvido por 
+            <a 
+              href="https://leo-portifolio.vercel.app/" 
+              target="_blank" 
+              className="text-blue-500 font-medium hover:text-amber-500 ml-1 transition"
+            >
+              Léo Jaime
+            </a>
+          </p>
         </div>
       </div>
     </footer>
